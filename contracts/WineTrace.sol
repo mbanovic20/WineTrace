@@ -32,4 +32,9 @@ contract WineTracer {
         quantityKg = _quantityKg;
         owner = _creator;
     }
+
+    function addStage(string memory _description, string memory _date) external onlyOwner {
+        stages.push(Stage(_description, _date));
+        emit NewStage(_description, _date);
+    }
 }
