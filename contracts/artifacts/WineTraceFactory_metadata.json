@@ -1,0 +1,141 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "wineContract",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "WineTraceCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_grapeType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_harvestYear",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantityKg",
+						"type": "uint256"
+					}
+				],
+				"name": "createWineTrace",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllWineContracts",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "wineContracts",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/WineTraceFactory.sol": "WineTraceFactory"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/WineTrace.sol": {
+			"keccak256": "0x685a70fbb8de6a0ef5b956523105e8ea0f0a3c3e5f65dd72a1e740cfecdc6448",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6fbd4a104a262f4dfada06b4f936606ff341b0a22baacea186b66aac0c2393a2",
+				"dweb:/ipfs/QmNh1wSFKzAu3yHuLUchB8BDQ8guV8hX9HZ9whum9tS3EC"
+			]
+		},
+		"contracts/WineTraceFactory.sol": {
+			"keccak256": "0x939c89bbe5f665e95934821097b0295ce11fa17123ff6eb4054515efe0989145",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3be48e1d815789faf3fd1dd1f9b1446170ada37717ccdefbfe0e52837653a080",
+				"dweb:/ipfs/QmZjDYRE69ZAvW5SMFKSj4z1pk7RkAMFGev9KEp2aFJFUM"
+			]
+		}
+	},
+	"version": 1
+}
