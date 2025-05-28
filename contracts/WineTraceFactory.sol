@@ -21,4 +21,8 @@ contract WineTraceFactory {
     function getAllWineContracts() public view returns (address[] memory) {
         return wineContracts;
     }
+
+    function getContractCount() public view returns (uint) {
+        return wineContracts.length;
+    }
 }
