@@ -17,4 +17,11 @@ contract WineTracer {
 
     mapping(uint => Batch) public batches;
     uint public batchCounter;
+
+    
+
+    modifier onlyOwner(uint _id) {
+        require(msg.sender == batches[_id].owner, "You are not the owner of this batch.");
+        _;
+    }
 }
