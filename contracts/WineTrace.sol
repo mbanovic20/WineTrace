@@ -7,21 +7,29 @@ contract WineTracer {
         string date;
     }
 
-    struct Batch {
-        string grapeType;
-        string harvestYear;
-        uint quantityKg;
-        address owner;
-        Stage[] stages;
+    string public grapeType;
+    string public harvestYear;
+    uint public quantityKg;
+    address public owner;
+
+    Stage[] public stages;
+
+    event NewStage(string description, string date);
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Permission denied. You are not the owner.");
+        _;
     }
 
-    mapping(uint => Batch) public batches;
-    uint public batchCounter;
-
-    
-
-    modifier onlyOwner(uint _id) {
-        require(msg.sender == batches[_id].owner, "You are not the owner of this batch.");
-        _;
+    constructor(
+        string memory _grapeType,
+        string memory _harvestYear,
+        uint _quantityKg,
+        address _creator
+    ) {
+        grapeType = _grapeType;
+        harvestYear = _harvestYear;
+        quantityKg = _quantityKg;
+        owner = _creator;
     }
 }

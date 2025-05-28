@@ -6,8 +6,92 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_grapeType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_harvestYear",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantityKg",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_creator",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "date",
+						"type": "string"
+					}
+				],
+				"name": "NewStage",
+				"type": "event"
+			},
+			{
 				"inputs": [],
-				"name": "batchCounter",
+				"name": "grapeType",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "harvestYear",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "quantityKg",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -26,27 +110,17 @@
 						"type": "uint256"
 					}
 				],
-				"name": "batches",
+				"name": "stages",
 				"outputs": [
 					{
 						"internalType": "string",
-						"name": "grapeType",
+						"name": "description",
 						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "harvestYear",
+						"name": "date",
 						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "quantityKg",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "owner",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -81,11 +155,11 @@
 	},
 	"sources": {
 		"contracts/WineTrace.sol": {
-			"keccak256": "0x61caf402c354eeb0af84fc3ce885d615cf4ab82c5ffe3482477204a7cf5f7868",
+			"keccak256": "0x440838ef6de40bef01d2ca49f732b10833dd7b0b596e31b6bfa9014b842c42e1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://947af029981744214185636d895c500e0eb7264aef0e91f77913c09e818bad38",
-				"dweb:/ipfs/QmZBp7WDWynUTd5asRDL6c81hoMeqT53vYyD1BcfAcpvyr"
+				"bzz-raw://57005c180a86d57325c852c97ec322be45bf54bbf6fd99759c7d087f9f622dc9",
+				"dweb:/ipfs/QmQEhfR7p4SaiP72TMztA7rzR92cpwFCtav4t2zRqAdXVy"
 			]
 		}
 	},
