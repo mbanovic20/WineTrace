@@ -43,4 +43,8 @@ contract WineTracer {
         Stage memory s = stages[index];
         return (s.description, s.date);
     }
+
+    function getStageCount() public view returns (uint) {
+        return stages.length;
+    }
 }
