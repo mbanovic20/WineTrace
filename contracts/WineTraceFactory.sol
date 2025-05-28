@@ -17,4 +17,8 @@ contract WineTraceFactory {
         wineContracts.push(address(wine));
         emit WineTraceCreated(address(wine), msg.sender);
     }
+
+    function getAllWineContracts() public view returns (address[] memory) {
+        return wineContracts;
+    }
 }
