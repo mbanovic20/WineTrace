@@ -32,4 +32,10 @@ contract WineTracer {
         quantityKg = _quantityKg;
         owner = _creator;
     }
+
+    function getStage(uint index) public view returns (string memory, string memory) {
+        require(index < stages.length, "Invalid index");
+        Stage memory s = stages[index];
+        return (s.description, s.date);
+    }
 }

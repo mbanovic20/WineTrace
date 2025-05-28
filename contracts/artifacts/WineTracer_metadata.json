@@ -51,6 +51,30 @@
 				"type": "event"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getStage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "grapeType",
 				"outputs": [
@@ -155,11 +179,11 @@
 	},
 	"sources": {
 		"contracts/WineTrace.sol": {
-			"keccak256": "0x440838ef6de40bef01d2ca49f732b10833dd7b0b596e31b6bfa9014b842c42e1",
+			"keccak256": "0x912589e7b08fee53ae5c9f04f848cbd789cd4a49e93348491c41bf5dc9f85df1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://57005c180a86d57325c852c97ec322be45bf54bbf6fd99759c7d087f9f622dc9",
-				"dweb:/ipfs/QmQEhfR7p4SaiP72TMztA7rzR92cpwFCtav4t2zRqAdXVy"
+				"bzz-raw://1269f9a484659feb591638bb07c4e9cedba46ece4638f344f6cf75be90a6400e",
+				"dweb:/ipfs/QmQrVXNjy5kwmqm5boBg9eGrnY6scC6s8ryirr6CTbZ4nN"
 			]
 		}
 	},
