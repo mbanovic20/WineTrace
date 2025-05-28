@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "batchCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "batches",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "grapeType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "harvestYear",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantityKg",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/WineTrace.sol": "WineTracer"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/WineTrace.sol": {
+			"keccak256": "0x14dcb62822645ee3025dbe4736b64c6eedc5940335c793bab5ef8e3f5922e531",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://278d4c4abaea9f480698c261f50881e33351e7f9210e87750654b47abf8bc158",
+				"dweb:/ipfs/QmUjG3L2NApEd1vLzCHr8hBQiQW6KCB3w3pAKsC9TN5Dz9"
+			]
+		}
+	},
+	"version": 1
+}
