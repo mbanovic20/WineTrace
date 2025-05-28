@@ -32,4 +32,8 @@ contract WineTracer {
         quantityKg = _quantityKg;
         owner = _creator;
     }
+
+    function getStageCount() public view returns (uint) {
+        return stages.length;
+    }
 }

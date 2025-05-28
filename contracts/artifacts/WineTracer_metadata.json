@@ -52,6 +52,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getStageCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "grapeType",
 				"outputs": [
 					{
@@ -155,11 +168,11 @@
 	},
 	"sources": {
 		"contracts/WineTrace.sol": {
-			"keccak256": "0x440838ef6de40bef01d2ca49f732b10833dd7b0b596e31b6bfa9014b842c42e1",
+			"keccak256": "0xcb36c5782a3f21ef60de453270c1c72f6bfbe85287d9a93c0ad5fec22365d746",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://57005c180a86d57325c852c97ec322be45bf54bbf6fd99759c7d087f9f622dc9",
-				"dweb:/ipfs/QmQEhfR7p4SaiP72TMztA7rzR92cpwFCtav4t2zRqAdXVy"
+				"bzz-raw://7bcee45e245c97388bae5e80f671082080adaaf658670cbe9be916e6f690cb06",
+				"dweb:/ipfs/QmZzpdPphdJHQe7TofLzSwHfjuwot3BGUPCkqkAjESGXhx"
 			]
 		}
 	},
