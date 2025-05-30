@@ -51,6 +51,25 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sponsor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "WineSponsored",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -158,27 +177,30 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "sponsorWine",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSponsorship",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "stages",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "description",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "date",
-						"type": "string"
-					}
-				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawSponsorship",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -210,11 +232,11 @@
 	},
 	"sources": {
 		"contracts/WineTrace.sol": {
-			"keccak256": "0x685a70fbb8de6a0ef5b956523105e8ea0f0a3c3e5f65dd72a1e740cfecdc6448",
+			"keccak256": "0xe96fe0b63c3eba6d66db6a8d3c762b55ca3130a2a81709750a928c6de87c12b0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6fbd4a104a262f4dfada06b4f936606ff341b0a22baacea186b66aac0c2393a2",
-				"dweb:/ipfs/QmNh1wSFKzAu3yHuLUchB8BDQ8guV8hX9HZ9whum9tS3EC"
+				"bzz-raw://a6bd810384735bf521c7fa37a64bfe4ab4e03db2b13b8c614a62d8b6a0b9a282",
+				"dweb:/ipfs/QmYYD3kLc8UsyLqVfHNVrqtKGhgeKbaYuog3mcZLcAq2ZJ"
 			]
 		}
 	},

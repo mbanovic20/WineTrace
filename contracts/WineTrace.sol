@@ -12,9 +12,11 @@ contract WineTrace {
     uint public quantityKg;
     address public owner;
 
-    Stage[] public stages;
+    Stage[] private stages;
+    uint public totalSponsorship;
 
     event NewStage(string description, string date);
+    event WineSponsored(address indexed sponsor, uint amount);
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Permission denied. You are not the owner.");
@@ -27,6 +29,7 @@ contract WineTrace {
         uint _quantityKg,
         address _creator
     ) {
+        require(_quantityKg > 0, "Quantity must be greater than 0.");
         grapeType = _grapeType;
         harvestYear = _harvestYear;
         quantityKg = _quantityKg;
@@ -46,5 +49,19 @@ contract WineTrace {
 
     function getStageCount() public view returns (uint) {
         return stages.length;
+    }
+
+    function sponsorWine() external payable {
+        require(msg.value > 0, "Sponsorship must be greater than 0.");
+        totalSponsorship += msg.value;
+        emit WineSponsored(msg.sender, msg.value);
+    }
+
+    function withdrawSponsorship() external onlyOwner {
+        require(totalSponsorship > 0, "No funds to withdraw.");
+        uint amount = totalSponsorship;
+        totalSponsorship = 0;
+        (bool sent, ) = owner.call{value: amount}("");
+        require(sent, "Withdrawal failed.");
     }
 }
